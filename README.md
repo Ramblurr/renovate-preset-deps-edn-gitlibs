@@ -27,7 +27,7 @@ Add this preset to your renovate config:
   "extends": [
     "config:base",
     // your other presets
-    "github>ramblurr/renovate-config-clojure-gitlibs"
+    "github>ramblurr/renovate-preset-deps-edn-gitlibs"
   ],
   // your config
 }
@@ -39,3 +39,8 @@ Add this preset to your renovate config:
 - Git dependencies must use https://github.com/ URLs
 - Dependencies must include both :git/tag and :git/sha fields
 - Tags should follow semver or semver-like patterns (e.g., v1.2.3, v1.2.3-alpha)
+
+## License: European Union Public License 1.2
+
+Copyright © 2025 Casey Link <unnamedrambler@gmail.com>
+Distributed under the [EUPL-1.2](https://spdx.org/licenses/EUPL-1.2.html)
