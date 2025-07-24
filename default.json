@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "regexManagers": [
+    {
+      "customType": "regex",
+      "description": "Clojure deps.edn gitlibs",
+      "managerFilePatterns": ["(^|/)deps\\.edn$"],
+      "matchStrings": [
+        "(?<depName>[\\w.-]+\\/[\\w.-]+)\\s+\\{[\\s\\S]*?:git\\/url\\s+\"https:\\/\\/github\\.com\\/(?<packageName>[^\"]+)\\.git\"[\\s\\S]*?:git\\/tag\\s+\"(?<currentValue>[^\"]+)\"[\\s\\S]*?:git\\/sha\\s+\"(?<currentDigest>[^\"]+)\"[\\s\\S]*?\\}"
+      ],
+      "datasourceTemplate": "github-tags",
+      "versioningTemplate": "semver-coerced"
+    }
+  ]
+}
