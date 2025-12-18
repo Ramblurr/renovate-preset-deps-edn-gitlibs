@@ -14,9 +14,8 @@
   ],
   "packageRules": [
     {
-      "matchManagers": ["clojure"],
       "matchPackageNames": ["vvvvalvalval/scope-capture"],
-      "allowedVersions": ["!0.3.3-s1"]
+      "allowedVersions": "!/^0\\.3\\.3-s1$/"
     }
   ]
 }
