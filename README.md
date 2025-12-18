@@ -1,10 +1,12 @@
 # renovate-config-clojure-gitlibs
 
-A [Renovate](https://github.com/renovatebot/renovate) preset for automatically updating Clojure git dependencies in `deps.edn` files.
+A [Renovate](https://github.com/renovatebot/renovate) preset for automatically
+updating Clojure git dependencies in `deps.edn` files.
 
 ## What it does
 
-This preset adds support for updating git-based dependencies in Clojure `deps.edn` files that follow this format:
+This preset adds support for updating git-based dependencies in Clojure
+`deps.edn` files that follow this format:
 
 ```clojure
 com.example/some-lib {:git/url "https://github.com/example/some-lib.git"
@@ -24,15 +26,14 @@ Add this preset to your renovate config:
 
 ```json5
 {
-  "extends": [
+  extends: [
     "config:base",
     // your other presets
-    "github>ramblurr/renovate-preset-deps-edn-gitlibs"
+    "github>ramblurr/renovate-preset-deps-edn-gitlibs",
   ],
   // your config
 }
 ```
-
 
 ## Requirements
 
@@ -42,5 +43,5 @@ Add this preset to your renovate config:
 
 ## License: European Union Public License 1.2
 
-Copyright © 2025 Casey Link <unnamedrambler@gmail.com>
-Distributed under the [EUPL-1.2](https://spdx.org/licenses/EUPL-1.2.html)
+Copyright © 2025 Casey Link <unnamedrambler@gmail.com> Distributed under the
+[EUPL-1.2](https://spdx.org/licenses/EUPL-1.2.html)
