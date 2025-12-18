@@ -30,6 +30,7 @@ Add this preset to your renovate config:
     "config:base",
     // your other presets
     "github>ramblurr/renovate-preset-deps-edn-gitlibs",
+    "github>ramblurr/renovate-preset-deps-edn-gitlibs:javascript", // optional if your project uses npm
   ],
   // your config
 }

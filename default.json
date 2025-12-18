@@ -1,5 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "minimumReleaseAge": "7 days",
+  "prCreation": "not-pending",
+  "internalChecksFilter": "strict",
   "customManagers": [
     {
       "customType": "regex",
@@ -14,6 +17,11 @@
   ],
   "packageRules": [
     {
+      "matchDatasources": ["clojure"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "matchDatasources": ["clojure"],
       "matchPackageNames": ["vvvvalvalval/scope-capture"],
       "allowedVersions": "!/^0\\.3\\.3-s1$/"
     }
